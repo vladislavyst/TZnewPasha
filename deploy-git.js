@@ -27,7 +27,7 @@ try {
     // 3. Коммит
     console.log('[3/6] Создание коммита...');
     try {
-        execSync('git commit -m "feat: Update questions for agricultural equipment theme\n\n- Replace all 76 questions with agricultural equipment specific questions\n- Add questions about company info, contacts, regions\n- Add questions about brands (CLAAS, John Deere, CNH, JCB, Manitou, Bourgault)\n- Add questions about reference site kompleksagro.ru\n- Add questions about forms, integrations (CRM, 1C, Telegram)\n- Add questions about catalog structure, prices, delivery, payment\n- Add questions about design preferences and branding\n- Add questions about technical requirements and SEO\n- Add questions about budget, timeline, and legal aspects\n- All questions adapted for agricultural equipment dealers and service centers"', { stdio: 'inherit' });
+        execSync('git commit -m "fix: Move DOCX generation to server-side API route\n\n- Create /api/generate-docx route for server-side DOCX generation\n- Fix DOCX download issue on Vercel deployment\n- Remove client-side docx imports from TZGenerator component\n- Use fetch API to generate DOCX on server instead of browser\n- This fixes the issue where DOCX files couldn\'t be downloaded after deployment"', { stdio: 'inherit' });
     } catch (e) {
         console.log('Предупреждение: Нет изменений для коммита или коммит уже создан\n');
     }
