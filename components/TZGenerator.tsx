@@ -2,7 +2,7 @@
 
 import { TestResults } from '@/lib/types';
 import { sections } from '@/lib/questions';
-import { Document, Packer, Paragraph, TextRun, HeadingLevel } from 'docx';
+import { Document, Packer, Paragraph, HeadingLevel } from 'docx';
 import { saveAs } from 'file-saver';
 
 interface TZGeneratorProps {
@@ -44,7 +44,7 @@ export default function TZGenerator({ results, onDownload }: TZGeneratorProps) {
   };
 
   const generateDocxTZ = async (): Promise<Document> => {
-    const children: (Paragraph | TextRun)[] = [];
+    const children: Paragraph[] = [];
 
     // Заголовок
     children.push(
