@@ -27,7 +27,7 @@ try {
     // 3. Коммит
     console.log('[3/6] Создание коммита...');
     try {
-        execSync('git commit -m "feat: Add modern design with Sparkles and Evervault Card effects\n\n- Add Sparkles particle effect to homepage\n- Add Evervault Card interactive effect to features card\n- Improve overall design with gradients and animations\n- Add Inter font from Google Fonts\n- Full mobile responsive design\n- Fix CSS compilation errors\n- Restore all application files (app/, components/, lib/)\n- Add all 76 questions across 9 sections\n- Implement section-based navigation (1 section = 1 page)"', { stdio: 'inherit' });
+        execSync('git commit -m "feat: Update questions for agricultural equipment theme\n\n- Replace all 76 questions with agricultural equipment specific questions\n- Add questions about company info, contacts, regions\n- Add questions about brands (CLAAS, John Deere, CNH, JCB, Manitou, Bourgault)\n- Add questions about reference site kompleksagro.ru\n- Add questions about forms, integrations (CRM, 1C, Telegram)\n- Add questions about catalog structure, prices, delivery, payment\n- Add questions about design preferences and branding\n- Add questions about technical requirements and SEO\n- Add questions about budget, timeline, and legal aspects\n- All questions adapted for agricultural equipment dealers and service centers"', { stdio: 'inherit' });
     } catch (e) {
         console.log('Предупреждение: Нет изменений для коммита или коммит уже создан\n');
     }

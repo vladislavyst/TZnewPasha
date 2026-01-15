@@ -1,7 +1,7 @@
 @echo off
 chcp 65001
 echo ====================================
-echo Git Push to GitHub
+echo Git Commit and Push
 echo ====================================
 echo.
 
@@ -39,12 +39,5 @@ echo SUCCESS! Code pushed to GitHub!
 echo ====================================
 echo.
 echo Repository: https://github.com/vladislavyst/TZnewPasha
-echo.
-echo Next steps for Vercel deployment:
-echo 1. Go to https://vercel.com
-echo 2. Login with GitHub
-echo 3. Click "Add New Project"
-echo 4. Select "TZnewPasha" repository
-echo 5. Click "Deploy"
 echo.
 pause
